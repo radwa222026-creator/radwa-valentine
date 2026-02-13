@@ -19,39 +19,39 @@ export default function MainComponent() {
     }, [index, displayedText, fullText]);
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-pink-100 to-red-200 p-4 sm:p-8 overflow-hidden"> {/* قلل padding على الموبايل وأضف overflow-hidden */}
+        <div className="min-h-screen bg-gradient-to-br from-pink-100 to-red-200 p-4 sm:p-8 overflow-hidden">
             <Toaster />
             <div className="max-w-6xl mx-auto text-center">
-                <h1 className="text-3xl sm:text-5xl font-bold text-red-500 mb-6 sm:mb-8 animate-bounce"> ❤️ Our First Valentine ❤️</h1> {/* قلل حجم العنوان على الموبايل */}
+                <h1 className="text-3xl sm:text-5xl font-bold text-red-500 mb-6 sm:mb-8 animate-bounce"> ❤️ Our First Valentine ❤️</h1>
 
-                <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg mb-6 sm:mb-8"> {/* قلل padding على الموبايل */}
-                    <p className="text-base sm:text-lg text-red-500 text-gray-700 leading-relaxed">{displayedText}</p> {/* قلل حجم النص على الموبايل */}
+                <div className="bg-white p-4 sm:p-6 rounded-lg shadow-lg mb-6 sm:mb-8">
+                    <p className="text-base sm:text-lg text-red-500 text-gray-700 leading-relaxed">{displayedText}</p>
                 </div>
 
                 <div className="bg-white p-4 rounded-lg shadow-md mb-6 sm:mb-8 inline-block">
-                    <img src="/img/roro.jpeg" alt="Radwa" className="w-48 h-48 sm:w-64 sm:h-64 object-cover rounded-lg max-w-full" /> {/* قلل حجم الصورة على الموبايل وأضف max-w-full */}
+                    <img src="/img/roro.jpeg" alt="Radwa" className="w-48 h-48 sm:w-64 sm:h-64 object-cover rounded-lg max-w-full" />
                 </div>
 
-                <div className="flex justify-center space-x-2 sm:space-x-4 mb-6 sm:mb-8"> {/* قلل المسافة على الموبايل */}
-                    <img src="/img/mans.jpeg" alt="Mansour" className="w-48 h-48 sm:w-64 sm:h-64 object-cover rounded-lg shadow-md max-w-full" /> {/* قلل حجم الصورة على الموبايل وأضف max-w-full */}
-                    <img src="/img/dodo.jpeg" alt="Radwa" className="w-48 h-48 sm:w-64 sm:h-64 object-cover rounded-lg shadow-md max-w-full" /> {/* قلل حجم الصورة على الموبايل وأضف max-w-full */}
+                <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-6 sm:mb-8"> {/* تحت بعض على الموبايل، جنب بعض على الشاشات الأكبر */}
+                    <img src="/img/mans.jpeg" alt="Mansour" className="w-48 h-48 sm:w-64 sm:h-64 object-cover rounded-lg shadow-md max-w-full" />
+                    <img src="/img/dodo.jpeg" alt="Radwa" className="w-48 h-48 sm:w-64 sm:h-64 object-cover rounded-lg shadow-md max-w-full" />
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8"> {/* قلل المسافة على الموبايل */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
                     <div className="bg-white p-4 rounded-lg shadow-md flex justify-center">
-                        <video controls autoPlay muted loop className="w-48 sm:w-72 aspect-[9/16] object-cover rounded-lg max-w-full"> {/* قلل عرض الفيديو على الموبايل وأضف max-w-full */}
+                        <video controls autoPlay muted loop className="w-48 sm:w-72 aspect-[9/16] object-cover rounded-lg max-w-full">
                             <source src="/video/dody.mp4" type="video/mp4" />
                             متصفحك لا يدعم الفيديو.
                         </video>
                     </div>
                     <div className="bg-white p-4 rounded-lg shadow-md flex items-center">
-                        <p className="text-base sm:text-lg text-gray-700 text-red-500 leading-relaxed"> {/* قلل حجم النص على الموبايل */}
+                        <p className="text-base sm:text-lg text-gray-700 text-red-500 leading-relaxed">
                             أحلى وأجمل هدية ربنا بعتهالي في حياتي يارب يخليكي ليا وميحرمنيش منك ابدا وباذن الله يكون لينا نصيب في بعض
                         </p>
                     </div>
                 </div>
 
-                <p className="text-xl sm:text-3xl font-bold text-red-500 mt-8 sm:mt-12">بحبك مش مجرد كلمة ❤️</p> {/* قلل حجم النص على الموبايل */}
+                <p className="text-xl sm:text-3xl font-bold text-red-500 mt-8 sm:mt-12">بحبك مش مجرد كلمة ❤️</p>
             </div>
         </div>
     );
