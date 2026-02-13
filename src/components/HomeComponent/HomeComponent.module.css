@@ -1,0 +1,16 @@
+/* src/components/HomeComponent/HomeComponent.module.css */
+.heart-beat {
+    animation: heartBeat 1s infinite;
+}
+
+@keyframes heartBeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}

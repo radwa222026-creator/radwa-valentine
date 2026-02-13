@@ -1,0 +1,14 @@
+/* src/components/MainComponent/MainComponent.module.css */
+.animate-fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

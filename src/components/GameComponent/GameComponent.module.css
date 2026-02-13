@@ -1,0 +1,4 @@
+/* src/components/GameComponent/GameComponent.module.css */
+.card-flip {
+    transition: transform 0.5s;
+}
