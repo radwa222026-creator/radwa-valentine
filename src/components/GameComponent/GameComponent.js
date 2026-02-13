@@ -9,7 +9,7 @@ export default function GameComponent() {
     const router = useRouter();
 
     const handleSubmit = () => {
-        if (answer.trim() === '2/2' || '2/2/2026') {
+        if (answer.trim() === '2/2') {
             toast.success('أشطر كتكوتة 😍❤️', { duration: 3000 });
             setTimeout(() => router.push('/main'), 3000);
         } else {
@@ -38,4 +38,5 @@ export default function GameComponent() {
             </div>
         </div>
     );
+
 }
